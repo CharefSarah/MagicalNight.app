@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+
+    background: var(--clr_dark);
+    color: var(--clr_light);
+    font-family: "Switzer";
+    font-size: 10px;
+    font-weight: 300;
+    height: 100vh;
+    width: 100%;
+
+
+  }
+
+  @font-face {
+    font-family: "Switzer";
+    src: url("../fonts/Switzer-Light.otf") format("opentype");
+  }
+
+  :root {
+    --clr_light: #F7F8FE;
+    --clr_dark: #0C0A1D;
+    --clr_mid1: #14112C;
+    --clr_mid2: #717ADB;
+    --clr_mid3: #D2D0FF;
+    --clr_accent1: #4778FF;
+    --clr_accent2: #52CFFF;
+  }
+
+
+
+  .button__squircle {
+    margin: 8px;
+    padding: 16px 24px;
+    outline: none;
+    border: none;
+    --squircle-smooth: 0.8;
+    --squircle-radius: 20px;
+    background-color: #4778FF;
+    color: var(--clr_light);
+
+  }
+
+  .squircle {
+    width: 230px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: var(--clr_light);
+    background: paint(squircle);
+    --squircle-smooth: 1;
+    --squircle-radius: 16px;
+    --squircle-fill: #4778FF;
+  }
+
+
+  .bottom__button {
+    position: absolute;
+    top: 90%;
+    left: 20%;
+
+  }
+
+  .onboard {
+    height: 100%;
+    background-image: url(../images/backgroundmn.webp);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .onboard h1 {
+    font-size: 2.5rem;
+  }
+
+  .onboard p {
+    line-height: 2.5rem;
+    font-size: 1rem;
+    color: var(--clr_mid3);
+  }
+
+}
