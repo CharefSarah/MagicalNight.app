@@ -14,7 +14,7 @@
     font-family: "Switzer";
     font-size: 10px;
     font-weight: 300;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
 
 
@@ -27,7 +27,7 @@
 
   :root {
     --clr_light: #F7F8FE;
-    --clr_dark: #0C0A1D;
+    --clr_dark: #000715;
     --clr_mid1: #14112C;
     --clr_mid2: #717ADB;
     --clr_mid3: #D2D0FF;
@@ -71,24 +71,50 @@
 
   .onboard {
     height: 100%;
-    background-image: url(../images/backgroundmn.webp);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
+  }
+
+  .onboard img {
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .onboard__text {
+    bottom: 13rem;
+    position: absolute;
+    text-align: center;
   }
 
   .onboard h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
-  .onboard p {
-    line-height: 2.5rem;
-    font-size: 1rem;
+  .onboard__text p {
+    line-height: 3rem;
+    font-size: 1.5rem;
     color: var(--clr_mid3);
+  }
+
+  .headphones__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5rem;
+    font-size: 0.8rem;
+    color: var(--clr_mid2);
+    position: absolute;
+    bottom: 5rem;
+  }
+
+  #fi_2972413 {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 6px;
+    fill: var(--clr_mid2);
   }
 
 }
